@@ -63,9 +63,8 @@ export default class App extends React.Component {
     // Calls the geocoding and weather API, get back a location and weather object
     const response = await geocodeAndGetWeather(this.state.locationInputText);
 
-    //console.log(response.location);
-    //console.log(response.weather);
-    console.log(response.weather.daily.data[0].temperatureHigh)
+    console.log(response.location);
+    console.log(response.weather);
 
     // manipulate state
     this.setState({
